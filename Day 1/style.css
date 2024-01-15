@@ -1,0 +1,60 @@
+@keyframes animation1{
+    0%{
+        left:0%;
+        top: 0%;
+    }
+    25%{
+        left:73%;
+        top:0%;
+    }
+    50%{
+        top: 80.5%;
+        left: 73%;
+    }
+    75%{
+        left: 0%;
+        top: 80.5%;
+    } 
+    
+    100%{
+        left:0%;
+        top:0%;
+    } 
+
+}
+
+.animationOne{
+    position: absolute;
+    background-color: lightblue;
+    height:100px;
+    Width:100px;
+    border-radius: 50%;
+    animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: background-color 1s, height 2s, width 2s;
+}
+.animationOne:hover{
+    height: 150px;
+    width: 150px;
+    background-color:aliceblue
+}
+
+.animationTwo{
+    position: absolute;
+    background-color:darkslategray;
+    height:100px;
+    width:100px;
+    left:50%;
+    top:50%;
+    transition: background-color 1s, height 2s, width 2s;
+    transform: translate(-50px, -100px);
+}
+
+.animationTwo:hover{
+    background-color: brown;
+    height: 150px;
+    width: 150px;
+   
+}
